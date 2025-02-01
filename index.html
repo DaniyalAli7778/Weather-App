@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head section containing meta information and resource links -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App with Forecast</title>
+    <!-- External CSS and JavaScript files -->
+    <link rel="stylesheet" href="style.css">
+    <script src="/app.js" type="module"></script>
+</head>
+
+<body>
+    <!-- Main weather application container -->
+    <div class="weather-app">
+        <!-- Header section with app title and search functionality -->
+        <header class="header">
+            <h1>Weather App</h1>
+            <!-- Search form for city input -->
+            <div class="search-container">
+                <form action="" style="display: flex; align-items: center; gap:  30px;">
+                    <input type="text" id="city-input" placeholder="Enter city..." />
+                    <button id="search-button">Search</button>
+                </form>
+            </div>
+        </header>
+
+        <!-- Current weather information display section -->
+        <section class="current-weather">
+            <!-- Location display with country and city name -->
+            <section class="location"
+                style="display: flex; flex-direction: row;      gap: 1rem;  align-items: center; justify-content: center;">
+                <p class="country-name" style="font-size: 1.5em; font-weight: bold;"> </p>
+                <h2 id="city-name">City Name</h2>
+            </section>
+
+            <!-- Weather details display -->
+            <p id="temperature">--°C</p>
+            <p id="temperature-f">--°F</p>
+            <p id="description" style="font-weight: bold;font-size: 1rem;">Weather Description</p>
+            <p id="wind">Wind: -- km/h</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="sunrise">Sunrise</p>
+            <p id="sunset">Sunset</p>
+
+            <!-- Weather condition icon -->
+            <img id="weather-icon" src="" alt="Weather Icon" style="height: 50px; width: 50px;" />
+        </section>
+
+        <!-- Forecast Section -->
+
+    </div>
+    <!-- Hourly weather forecast section -->
+    <section class="weather-forecast">
+        <!-- Forecast header with location and update time -->
+        <div class="forecast-header">
+            <div class=" forcast-location">
+                <h2 id=" ">New York City, NY</h2>
+                <div class="forcast-time-update">Updated: <span id="forcast-update-time">07:19 AM</span></div>
+            </div>
+        </div>
+
+        <!-- Forecast grid containing hourly weather cards -->
+        <div class="forecast-grid">
+            <!-- Hourly forecast cards container -->
+            <section class="forecast-grid-part-1"
+                style="display: flex ; gap:20px; align-items: center; width: 100% ; flex-wrap: wrap;">
+                <!-- Individual hourly weather cards -->
+                <!-- Each card contains:
+               - Time slot
+               - Temperature
+               - Weather icon
+               - Detailed weather information (precipitation, wind, humidity)
+          -->
+               
+                 
+            </section>
+
+
+            <!-- Repeat similar blocks for each hour -->
+            <!-- Hour 2 -->
+
+
+            <!-- Add remaining hours following the same pattern -->
+        </div>
+
+    </section>
+</body>
+
+</html>
