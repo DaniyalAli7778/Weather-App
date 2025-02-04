@@ -39,9 +39,17 @@ function getWheatherInformation() {
             // Check if response is valid
            
             if (!res.ok) {
-                alert(" Please Write correct city name");
+                if (city_Name == " ") {
+                    alert(" Please Write a city name");
+                    return;
+
+                }else{
+                    alert(" Please Write correct city name");
+                    return;
+                }
             }
             return res.json();
+
         })
         .then((data) => {
             if (data) {
@@ -100,9 +108,10 @@ function getWheatherInformation() {
             }
         })
         .catch((error) => {
-             console.log("Please check your internet" );
+             alert("Please check your internet" );
              
-        });
+        }) 
+        
 }
 
 
