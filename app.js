@@ -108,7 +108,7 @@ function getWheatherInformation() {
             }
         })
         .catch((error) => {
-             alert("Please check your internet" );
+             alert("Error in data fething from server",error);
              
         }) 
         
